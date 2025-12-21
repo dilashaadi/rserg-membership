@@ -1,2 +1,2 @@
 # RSERG
-Repo for RSER membership form.
+Repo for RSERG membership form.
