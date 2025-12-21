@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSERG Membership Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <style>
+        :root { 
+            --deep-navy: #0f172a; 
+            --electric-blue: #1e40af;
+            --energy-green: #22c55e; 
+            --warning-red: #ef4444;
+            --text-main: #1e293b;
+        }
+
+        body { 
+            font-family: "Times New Roman", Times, serif; 
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+            background-attachment: fixed;
+            margin: 0; color: white; line-height: 1.6;
+        }
+
+        .header-container { text-align: center; padding: 60px 20px; }
+
+        /* UPDATED CIRCULAR LOGO STYLE */
+        .logo-img {
+            width: 160px; /* Fixed width */
+            height: 160px; /* Fixed height to create a square base */
+            object-fit: contain; /* Ensures non-square logos don't stretch */
+            margin-bottom: 20px; 
+            padding: 15px; /* Slightly more padding for a better look */
+            background: rgba(255, 255, 255, 0.95); 
+            border-radius: 50%; /* This makes it perfectly circular */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 3px solid var(--energy-green); /* Added a nice green border rim */
+        }
+
+        h1 { font-size: 2.5rem; margin: 10px 0; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+        .portal-subtitle {
+            font-size: 1.3rem; color: var(--energy-green); font-weight: bold;
+            text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px;
+        }
+
+        .description-glass {
+            max-width: 850px; margin: 0 auto; text-align: justify;
+            background: rgba(255, 255, 255, 0.98); color: var(--text-main);
+            padding: 35px; border-radius: 20px; border-bottom: 5px solid var(--energy-green);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2); font-size: 1.1rem;
+        }
+
+        .advisor-section {
+            margin-top: 25px; padding-top: 20px; border-top: 2px solid #e2e8f0; text-align: center;
+        }
+
+        .container { max-width: 800px; margin: 50px auto 30px; padding: 0 20px; }
+
+        .form-card { 
+            background: #ffffff; padding: 50px; border-radius: 24px; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3); color: var(--text-main);
+        }
+
+        .section-header {
+            font-size: 1.5rem; color: var(--electric-blue); border-left: 6px solid var(--energy-green);
+            background: #f1f5f9; padding: 12px 20px; margin: 40px 0 25px;
+            font-weight: bold; border-radius: 0 8px 8px 0;
+        }
+
+        .field-label { display: block; font-weight: bold; margin-bottom: 12px; color: var(--deep-navy); font-size: 1.1rem; }
+
+        input, select, textarea { 
+            width: 100%; padding: 15px; border: 2px solid #cbd5e1; border-radius: 10px; 
+            font-family: inherit; font-size: 1.05rem; box-sizing: border-box; background-color: #f8fafc; margin-bottom: 10px;
+        }
+
+        ::placeholder { color: #94a3b8; opacity: 1; }
+        input:focus { border-color: var(--electric-blue); outline: none; background-color: #fff; }
+
+        .btn-submit { 
+            width: 100%; background: linear-gradient(to right, var(--energy-green), #16a34a);
+            color: white; border: none; padding: 22px; border-radius: 12px; font-weight: bold; 
+            font-size: 1.3rem; cursor: pointer; margin-top: 30px; text-transform: uppercase;
+            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3); transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover { transform: scale(1.01); filter: brightness(1.1); }
+
+        .hidden { display: none; }
+        .dynamic-panel { background: #f0fdf4; padding: 25px; border-radius: 15px; border: 2px dashed var(--energy-green); margin: 30px 0; }
+        
+        .mentor-box { background: white; padding: 20px; border-radius: 10px; border: 1px solid #bbf7d0; margin-top: 15px; }
+
+        .footer-info {
+            max-width: 900px; margin: 40px auto 100px; text-align: center;
+            color: white; padding: 0 20px; font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-container">
+    <img src="color_estd.png" alt="RSERG Logo" class="logo-img">
+    <h1>Renewable and Sustainable Energy Resource Group (RSERG)</h1>
+    <div class="portal-subtitle">Membership Application Portal</div>
+    
+    <div class="description-glass">
+        <p>The <strong>Renewable and Sustainable Energy Resource Group (RSERG)</strong> is a student-led academic network initiated in the Department of Mechanical Engineering at Kathmandu University. The group is aiming to bring together students, scholars and professionals from all around the world with a strong interest in renewable and sustainable energy systems to engage in learning, research, and practical initiatives.</p>
+        
+        <p>RSERG works to promote clean energy awareness, innovation, and interdisciplinary knowledge exchange through workshops, seminars, training programs, and community-oriented outreach.</p>
+        
+        <ol style="margin-bottom: 20px;">
+        <strong> <li>Promoting Energy Awareness and Literacy</li></strong>
+           <strong> <li>Building Technical and Leadership Skills</li> </strong>
+            <strong><li>Fostering Innovation and Research Culture</li></strong>
+            <strong><li>Supporting Community-Based Energy Initiatives</li></strong>
+            <strong><li>Creating a Network of Energy Enthusiasts and Professionals</li></strong>
+        </ol>
+
+        <p>Membership in RSERG is <strong>free of cost</strong>. Applicants are requested to provide accurate academic information and supporting documents for verification purposes.</p>
+        
+        <div class="advisor-section">
+            <h3 style="color: var(--electric-blue); margin-bottom: 10px; text-decoration: underline;">ADVISORS</h3>
+            <p style="margin: 5px 0;"><strong>Prof. Sunil Prasad Lohani, PhD</strong> (Kathmandu University)</p>
+            <p style="margin: 5px 0;"><strong>Associate Prof. Rajan Kumar Thapa, PhD</strong> (University of South-Eastern Norway)</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <form id="rsergForm" class="form-card">
+        <div class="section-header">Part I: Contact Information</div>
+        
+        <label class="field-label">Full Name</label>
+        <input type="text" name="fullName" placeholder="e.g. Sumana Shrestha" required>
+        
+        <label class="field-label">Email Address</label>
+        <input type="email" name="email" placeholder="e.g. contact@gmail.com" required>
+        
+        <label class="field-label">Phone Number</label>
+        <input id="phone" type="tel" name="phone_full" required>
+        
+        <label class="field-label">Membership Category</label>
+        <select name="status" id="statusSelect" required>
+            <option value="">-- Choose Category --</option>
+            <option value="undergraduate">Undergraduate Student</option>
+            <option value="graduate">Graduate Student (Master's/PhD)</option>
+            <option value="research">Research Scholar</option>
+            <option value="professional">Working Professional</option>
+            <option value="other">Other</option>
+        </select>
+
+        <div id="dynamicDetails" class="hidden dynamic-panel">
+            <div id="undergraduateSection" class="hidden">
+                <label class="field-label">Institution / University</label>
+                <input type="text" name="inst" placeholder="e.g. Kathmandu University">
+                <label class="field-label">Degree Program & Year</label>
+                <input type="text" name="degree" placeholder="e.g. B.E. Mechanical (3rd Year)">
+            </div>
+
+            <div id="mentorSection" class="hidden">
+                <div id="gradFields" class="hidden">
+                    <label class="field-label">Institution</label>
+                    <input type="text" name="gradInst" placeholder="e.g. Kathmandu University">
+                    <label class="field-label">Research Focus</label>
+                    <textarea name="topic" rows="2" placeholder="Describe your focus..."></textarea>
+                </div>
+                
+                <div id="resFields" class="hidden">
+                    <label class="field-label">Affiliated Center</label>
+                    <input type="text" name="resInst" placeholder="e.g. Research Center Name">
+                    <label class="field-label">Field of Research</label>
+                    <input type="text" name="field" placeholder="e.g. Solar Photovoltaics">
+                </div>
+                
+                <div id="profFields" class="hidden">
+                    <label class="field-label">Organization</label>
+                    <input type="text" name="org" placeholder="e.g. Ministry of Energy">
+                    <label class="field-label">Job Title</label>
+                    <input type="text" name="profRole" placeholder="e.g. Project Manager">
+                </div>
+                
+                <div class="mentor-box">
+                    <label class="field-label">Would you be available for student mentorship?</label>
+                    <div style="margin-bottom: 10px;">
+                        <input type="radio" name="mentorAvailable" value="Yes" style="width:auto"> Yes
+                        <input type="radio" name="mentorAvailable" value="No" style="width:auto; margin-left: 20px;"> No
+                    </div>
+                    <label class="field-label">Webinar/Workshop Ideas</label>
+                    <textarea name="webinarIdeas" rows="2" placeholder="e.g. Grid Integration of Renewables..."></textarea>
+                </div>
+            </div>
+
+            <div id="otherSection" class="hidden">
+                <label class="field-label">Interest Statement</label>
+                <textarea name="otherInfo" rows="3" placeholder="Tell us why you wish to join..."></textarea>
+            </div>
+        </div>
+
+        <div class="section-header">Part II: Verification</div>
+        <label class="field-label">Upload ID or Transcript clearly showing your claimed educational details.</label>
+        <input type="file" id="fileInput" accept=".pdf, .jpg, .jpeg, .png" required>
+        <p style="color:var(--warning-red); font-weight:bold; font-size:0.9rem;">Max size: 1MB (PDF/JPG/PNG).</p>
+
+        <button type="submit" class="btn-submit" id="submitBtn">Finalize Application</button>
+        <div id="msg" style="text-align:center; font-weight:bold; margin-top:25px; font-size: 1.2rem;"></div>
+    </form>
+</div>
+
+<div class="footer-info">
+    <p><strong>FACILITATORS:</strong> Ayushma Chhantyal, Pratima Deuja, Satwik Ghimire, Dilasha Adhikari, Ganga Bahadur Khatri, Amshu Niraula, Rochak Dahal, Shrijika Malakar, Bidush Dahal, Shreya Bhandari</p>
+    <p>Contact: <a href="mailto:rserg.network@gmail.com" style="color: var(--energy-green); font-weight:bold; text-decoration:none;">rserg.network@gmail.com</a></p>
+</div>
+
+<script>
+    const webAppUrl = "https://script.google.com/macros/s/AKfycbz6qR6brhLwZPF4JAXXJPIyaMiaWRiaioQbl840uD_U6mq60r9xCU-Ydmfp3KTa2AhL/exec"; 
+    const iti = window.intlTelInput(document.querySelector("#phone"), { initialCountry: "np", utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" });
+
+    const statusSelect = document.getElementById('statusSelect');
+    const dynamicBox = document.getElementById('dynamicDetails');
+
+    function updateRequiredFields() {
+        const allDynamicInputs = dynamicBox.querySelectorAll('input, textarea, select');
+        allDynamicInputs.forEach(input => input.required = false);
+        const s = statusSelect.value;
+        if (!s) return;
+        dynamicBox.classList.remove('hidden');
+        
+        const setReq = (selector) => {
+            const block = document.querySelector(selector);
+            block.classList.remove('hidden');
+            block.querySelectorAll('input, textarea').forEach(i => i.required = true);
+        };
+
+        document.querySelectorAll('#undergraduateSection, #otherSection, #mentorSection, #gradFields, #resFields, #profFields').forEach(el => el.classList.add('hidden'));
+
+        if (s === 'undergraduate') setReq('#undergraduateSection');
+        if (s === 'other') setReq('#otherSection');
+        if (['graduate', 'research', 'professional'].includes(s)) {
+            document.getElementById('mentorSection').classList.remove('hidden');
+            document.querySelector('[name="webinarIdeas"]').required = true;
+            document.querySelector('[name="mentorAvailable"]').required = true;
+            if (s === 'graduate') setReq('#gradFields');
+            if (s === 'research') setReq('#resFields');
+            if (s === 'professional') setReq('#profFields');
+        }
+    }
+
+    statusSelect.onchange = updateRequiredFields;
+
+    document.getElementById('rsergForm').onsubmit = async (e) => {
+        e.preventDefault();
+        const msg = document.getElementById('msg');
+        const file = document.getElementById('fileInput').files[0];
+
+        if (file && file.size > 1048576) {
+            msg.style.color = "var(--warning-red)";
+            msg.innerText = "Error: File exceeds 1MB.";
+            return;
+        }
+
+        document.getElementById('submitBtn').disabled = true;
+        msg.style.color = "var(--electric-blue)";
+        msg.innerText = "⚡ Submitting Application...";
+
+        const reader = new FileReader();
+        reader.onload = async () => {
+            const fData = new FormData(e.target);
+            const payload = Object.fromEntries(fData.entries());
+            payload.contact = iti.getNumber();
+            payload.fileData = reader.result.split(',')[1];
+            payload.fileName = file.name; payload.fileType = file.type;
+
+            try {
+                await fetch(webAppUrl, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(payload) });
+                msg.style.color = "var(--energy-green)";
+                msg.innerText = "⚡ Success! Your application is in.";
+                e.target.reset(); dynamicBox.classList.add('hidden');
+            } catch (err) {
+                msg.style.color = "var(--warning-red)";
+                msg.innerText = "Error. Please check connection.";
+            } finally {
+                document.getElementById('submitBtn').disabled = false;
+            }
+        };
+        reader.readAsDataURL(file);
+    };
+</script>
+</body>
+</html>
