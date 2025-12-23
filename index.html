@@ -217,7 +217,7 @@
 </div>
 
 <script>
-    const webAppUrl = "https://script.google.com/macros/s/AKfycby7Q1il0NEPvAd3iiAuRPvD-YPjiqYgTXd3u2Y4x2DdRgkIqhAuanPsbK-bHZKbDRMK/exec"; 
+    const webAppUrl = "https://script.google.com/macros/s/AKfycbx1NG3RcStaOknen85icLbTsvgSbFa7kCYRJyR5Dz1pgXRboqI6sTckUREODaJ7SE0/exec"; 
     const iti = window.intlTelInput(document.querySelector("#phone"), { initialCountry: "np", utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" });
 
     const statusSelect = document.getElementById('statusSelect');
@@ -275,12 +275,22 @@
             payload.fileData = reader.result.split(',')[1];
             payload.fileName = file.name; payload.fileType = file.type;
 
-            try {
-                await fetch(webAppUrl, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(payload) });
-                msg.style.color = "var(--energy-green)";
-                msg.innerText = "⚡ Success! Your application is in.";
-                e.target.reset(); dynamicBox.classList.add('hidden');
+        try {
+                let response = await fetch(webAppUrl, { method: 'POST', mode: 'cors', body: new URLSearchParams(payload) });
+                let result = await response.text();
+
+                if (result === "ALREADY_EXISTS") {
+                    msg.style.color = "var(--warning-red)";
+                    msg.innerText = "❌ This email has already been used to apply.";
+                } else {
+                    msg.style.color = "var(--energy-green)";
+                    msg.innerText = "⚡ Success! Your application is in.";
+                    e.target.reset();
+                    dynamicBox.classList.add('hidden');
+                }
             } catch (err) {
+                // Because mode: 'no-cors' doesn't let us read the response, 
+                // for this to work perfectly, use mode: 'cors' as shown above.
                 msg.style.color = "var(--warning-red)";
                 msg.innerText = "Error. Please check connection.";
             } finally {
@@ -292,6 +302,7 @@
 </script>
 </body>
 </html>
+
 
 
 
